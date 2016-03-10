@@ -46,7 +46,7 @@ png(file = paste(fileUrl, "plot4.png", sep = "\\"), width = 480, height = 480)
 par(mfrow = c(2,2), bg = "white")
 
 ## plot (1,1)
-plot(xdata, ydata, type = "l", axes = FALSE, ylab = "Global Active Power (kilowatts)", xlab = "")
+plot(xdata, ydata, type = "l", axes = FALSE, ylab = "Global Active Power", xlab = "")
 axis(1, c(min(xdata), floor(mean(xdata)), max(xdata)), c("Thu", "Fri", "Sat"))	## first arg = 1 implies x-axis
 axis(2, at = 0:3 * 1000, c(0,2,4,6))
 box(lty = "solid")
